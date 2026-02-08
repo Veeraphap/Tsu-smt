@@ -1,0 +1,7 @@
+{
+  "name": "TSU Smart Guide",
+  "description": "A smart university course enrollment and academic planning system for Thaksin University (TSU) students, featuring credit tracking and AI-powered academic advising.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
