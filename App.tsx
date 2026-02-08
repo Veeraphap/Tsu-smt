@@ -3,9 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { User, Course } from './types';
 import { FACULTIES, COURSES_DATA } from './constants';
 import { getConflictingCourse } from './utils';
-import { getSmartAdviceStream } from './services/geminiService';
-
-const DAYS = ['จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์', 'อาทิตย์'];
+import { getSmartAdviceStream } from './geminiService'; DAYS = ['จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์', 'อาทิตย์'];
 const TIME_SLOTS = Array.from({ length: 11 }, (_, i) => i + 8);
 
 const StatusBadge: React.FC<{ type: string }> = ({ type }) => {
